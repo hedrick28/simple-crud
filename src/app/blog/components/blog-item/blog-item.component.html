@@ -1,1 +1,42 @@
-<p>blog-item works!</p>
+<head>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td,th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+    </head>
+
+
+<h1>Blog Item</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Author</th>
+        <th>Comments</th>
+        <th>Function Keys</th>
+    </tr>
+    <tr *ngFor="let data of blogs">
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+        <td>{{data.description}}</td>
+        <td>{{data.author}}</td>
+        <td>{{data.comments}}</td>
+        <td> <button class="button button1" (click)="edit()">Edit</button>
+        <button class="button button1" (click)="delete()">Delete</button></td>
+    </tr>
+</table>
