@@ -5,7 +5,9 @@ import { BookItemComponent } from './components/book-item/book-item.component';
 import { BookRoutingModule } from './book-routing.module';
 import { BookFormComponent } from './pages/book-form/book-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ReactiveFormComponent } from './form/reactive-form/reactive-form.component';
+
+import { EditComponent } from './form/edit/edit.component';
+import { CommandBarComponent } from '../shared/components/command-bar/command-bar.component';
 
 
 @NgModule({
@@ -13,7 +15,8 @@ import { ReactiveFormComponent } from './form/reactive-form/reactive-form.compon
     BookListComponent,
     BookItemComponent,
     BookFormComponent,
-    ReactiveFormComponent
+    EditComponent,
+    CommandBarComponent
   ],
   imports: [
     CommonModule,

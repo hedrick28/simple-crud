@@ -1,40 +1,6 @@
-<head>
-    <style>
-    
-    
-    td {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
+<app-header></app-header>
 
-    th {
-      border: 1px solid #dddddd;
-      text-align: center;
-      padding: 8px;
-    }
-    
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-    </style>
-    </head>
-
-
-<table>
-  <tr>
-    <th>Book</th>
-    <th>Blog</th>
-    <th>User</th>
-  </tr>
-  <tr>
-    <td><button class="button button1" routerLink="book-item">Book Item</button>
-    <button class="button button2" routerLink="book-list">Book List</button></td>
-    <td><button class="button button1" routerLink="blog-item">Blog Item</button>
-      <button class="button button2" routerLink="blog-list">Blog List</button></td>
-    <td><button class="button button1" routerLink="user">Profile</button></td>
-  </tr>
-</table>
-<router-outlet>
-
-</router-outlet>
+  <div class="container">
+    <br><br>
+<router-outlet></router-outlet>
+  </div>

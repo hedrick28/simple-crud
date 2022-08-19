@@ -9,20 +9,28 @@ import { UserModule } from './user/user.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { HeaderComponent } from './shared/components/header/header.component';
+import { BookFormComponent } from './modules/book/pages/book-form/book-form.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    BookFormComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BookModule,
+    BlogModule,
     UserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule
   ],
   providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

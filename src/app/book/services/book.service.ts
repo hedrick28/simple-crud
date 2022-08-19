@@ -28,6 +28,10 @@ export class BookService {
     return this.getDetails
   }
 
+  getBookDetail(){
+    return this.getDetails[0];
+  }
+
   getDetail(){
     return this.getDetails[0];
   }

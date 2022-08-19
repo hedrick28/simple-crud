@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Header} from '../header/header';
+import { HeaderService } from '../header.service';
 
 @Component({
   selector: 'app-header',
@@ -6,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  navName!:Header[];
+  activeLink=0;
 
-  constructor() { }
+  constructor(private _navNameService:HeaderService) { }
+
+  ngOnInit(){
+    this.navName=this._navNameService.getNavName();
 
   }
 

@@ -36,7 +36,7 @@
         <td>{{data.description}}</td>
         <td>{{data.author}}</td>
         <td>{{data.comments}}</td>
-        <td> <button class="button button1" (click)="edit()">Edit</button>
+        <td> <button class="button button1" (click)="edit()" routerLink="/blog/forms/edit">Edit</button>
         <button class="button button1" (click)="delete()">Delete</button></td>
     </tr>
 </table>

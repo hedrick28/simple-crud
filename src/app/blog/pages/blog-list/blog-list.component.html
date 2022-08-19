@@ -1,7 +1,12 @@
-<div *ngFor="let blog of blogs">
-    <!-- <h1>Blog List</h1>
+<div >
+    <h1>Blog List</h1>
     <ul *ngFor="let blog of blogs">
         <li>{{blog.title}}</li>
-    </ul> -->
-    <app-blog-item [blogItem]="blog" (actionEmitter)="executeAction($event)" class="app-blog"></app-blog-item>
+    </ul>
 </div>
+
+<div class="col-md-4">
+    <app-blog></app-blog>
+</div>
+
+
