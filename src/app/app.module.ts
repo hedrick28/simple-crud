@@ -19,12 +19,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     BookModule,
-    BlogModule,
     UserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
